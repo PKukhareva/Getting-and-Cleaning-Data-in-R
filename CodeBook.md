@@ -25,7 +25,7 @@ For each record it is provided:
 
 ## Modified dataset
 
-- 'clean_data.tcsv': contains the average of each variable for each activity and each subject (180 observations and 69 variables):
+- 'tidy_data.txt ': contains the average of each variable for each activity and each subject (180 observations and 69 variables):
 
 [1] "activity"                 "subject"                  "testlabel"                "tbodyaccmeanx"           
  [5] "tbodyaccmeany"            "tbodyaccmeanz"            "tbodyaccstdx"             "tbodyaccstdy"            
