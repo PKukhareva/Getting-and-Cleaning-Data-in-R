@@ -36,7 +36,7 @@ names(x) <- features$V2
 #removing duplicated variables
 x <- x[, !duplicated(features$V2)]
 #only keeping mean and std
-x <- select(x, features[grep("mean[xyz]|std[xyz]", features$V2), 2])
+x <- select(x, features[grep("mean[xyz]|std[xyz]|mean*|std*", features$V2), 2])
 
 
 #getting Test labels 
