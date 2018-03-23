@@ -1,6 +1,6 @@
 
 #Modified Human Activity Recognition Using Smartphones Dataset
-
+==================================================================
 Version 2.0
 ==================================================================
 Polina Kukhareva
