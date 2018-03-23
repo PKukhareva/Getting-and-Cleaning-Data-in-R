@@ -1,12 +1,12 @@
 
-#Modified Human Activity Recognition Using Smartphones Dataset
+# Modified Human Activity Recognition Using Smartphones Dataset
 ==================================================================
 Version 2.0
 ==================================================================
 Polina Kukhareva
 ==================================================================
 
-#Original Data
+## Original Data
 
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 
@@ -23,7 +23,7 @@ For each record it is provided:
 
 =========================================
 
-#Modified dataset
+## Modified dataset
 
 - 'clean_data.tcsv': contains the average of each variable for each activity and each subject (180 observations and 69 variables):
 
@@ -46,11 +46,11 @@ For each record it is provided:
 [65] "fbodybodyaccjerkmagstd"   "fbodybodygyromagmean"     "fbodybodygyromagstd"      "fbodybodygyrojerkmagmean"
 [69] "fbodybodygyrojerkmagstd" 
 
-# Transformations
+## Transformations
 
 To create this data set 'train/X_train.txt' training set and 'test/X_test.txt': test set were combined to produce a data set with 561 columns and 10299 rows, subject ids and activity labels were added, and then the data were summarised by activity and subject id.
 
-Original Variables (Feature Selection)
+## Original Variables (Feature Selection)
 =================
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
