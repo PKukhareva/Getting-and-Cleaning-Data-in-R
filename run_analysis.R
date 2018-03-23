@@ -23,7 +23,7 @@ x <- rbind (x_train, x_test)
 
 
 #getting column names
-features <- read.table("./features.txt")
+features <- read.table("./UCI HAR Dataset/features.txt")
 
 #changing variables names to lower case and substituting some characters
 features$V2 <- tolower(gsub("\\(\\)|,|-| ","", features$V2))
@@ -36,7 +36,7 @@ names(x) <- features$V2
 #removing duplicated variables
 x <- x[, !duplicated(features$V2)]
 #only keeping mean and std
-x <- select(x, features[grep("mean[xyz]|std[xyz]|mean*|std*", features$V2), 2])
+x <- select(x, features[grep("mean[xyz]|std[xyz]|mean$|std$", features$V2), 2])
 
 
 #getting Test labels 
@@ -62,11 +62,8 @@ str(data)
 
 #5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 # 30 subjects * 6 activities = 180 observations
-data <- group_by(data, activity, subject)
-tidy_data <- summarize_all(data, funs(mean))
-str(tidy_data)
 
-write.csv(tidy_data, file = "./tidy_data.csv")
-
+tidy_data <- data %>% group_by(activity, subject) %>% summarise_all(funs(mean))
+write.table(tidy_data, file = "./tidy_data.txt", row.name=FALSE)
 
 
