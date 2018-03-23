@@ -1,10 +1,10 @@
 
 # Modified Human Activity Recognition Using Smartphones Dataset
-==================================================================
-Version 2.0
-==================================================================
-Polina Kukhareva
-==================================================================
+
+## Version 2.0
+
+### Polina Kukhareva
+
 
 ## Original Data
 
@@ -13,7 +13,7 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details. 
 
 For each record it is provided:
-======================================
+
 
 - Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
 - Triaxial Angular velocity from the gyroscope. 
@@ -21,7 +21,7 @@ For each record it is provided:
 - Its activity label. 
 - An identifier of the subject who carried out the experiment.
 
-=========================================
+
 
 ## Modified dataset
 
@@ -51,7 +51,7 @@ For each record it is provided:
 To create this data set 'train/X_train.txt' training set and 'test/X_test.txt': test set were combined to produce a data set with 561 columns and 10299 rows, subject ids and activity labels were added, and then the data were summarised by activity and subject id.
 
 ## Original Variables (Feature Selection)
-=================
+
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
@@ -85,8 +85,8 @@ The set of variables that were kept in the modified dataset are:
 mean(): Mean value
 std(): Standard deviation
 
-License:
-========
+## License:
+
 Use of this dataset in publications must be acknowledged by referencing the following publication [1] 
 
 [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
